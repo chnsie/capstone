@@ -1,0 +1,2657 @@
+{
+  "validation_rules": {
+    "required_fields": [
+      "guide_name",
+      "type",
+      "purpose",
+      "metadata.target_audience",
+      "technical.status"
+    ],
+    "field_types": {
+      "guide_name": "string",
+      "phase": "string",
+      "type": "string",
+      "purpose": "string",
+      "url": "string",
+      "metadata": {
+        "difficulty": "enum['Beginner', 'Intermediate', 'Advanced']",
+        "time_required": "string",
+        "target_audience": "array[string]",
+        "prerequisites": "array[string]",
+        "related_guides": "array[string]"
+      },
+      "context": {
+        "use_cases": "array[string]",
+        "common_questions": "array[string]",
+        "key_terms": "array[string]"
+      },
+      "technical": {
+        "format": "string",
+        "last_updated": "date",
+        "version": "string",
+        "status": "enum['Active', 'Deprecated', 'Under Review']",
+        "systems": "array[string]"
+      },
+      "tags": "array[string]"
+    }
+  },
+  "guides": [
+    {
+      "guide_name": "Digital Product Registration Guide",
+      "phase": "Registration",
+      "type": "Guide",
+      "purpose": "How to register projects to initiate changes on XYZ agency website, microsites, and mobile app",
+      "url": "xyzagency.gov.sg/digitalproductregistrationguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers"
+        ],
+        "prerequisites": [
+          "Governance Guidelines"
+        ],
+        "related_guides": [
+          "How to define problem for registration",
+          "Programme Management Office Guides"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Starting a new digital project",
+          "Making major changes to existing digital products",
+          "Planning digital initiatives"
+        ],
+        "common_questions": [
+          "How do I start a new digital project?",
+          "What approvals do I need?",
+          "What information should I prepare?"
+        ],
+        "key_terms": [
+          "Digital Product",
+          "Change Request",
+          "Project Registration"
+        ]
+      },
+      "technical": {
+        "format": "Text with workflow diagrams",
+        "last_updated": "2025-08-12",
+        "version": "2.1",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#registration",
+        "#digital-products",
+        "#project-initiation"
+      ]
+    },
+    {
+      "guide_name": "How to define problem for registration",
+      "phase": "Registration",
+      "type": "Guide",
+      "purpose": "How to define your problem/idea well",
+      "url": "xyzagency.gov.sg/howtodefineproblemforregistration",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "45 mins",
+        "target_audience": [
+          "Product Owners",
+          "Business Analysts"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Digital Product Registration Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Problem statement creation",
+          "Project scope definition",
+          "Business case development"
+        ],
+        "common_questions": [
+          "How do I write a good problem statement?",
+          "What information should I include in my problem definition?",
+          "How do I scope my project appropriately?"
+        ],
+        "key_terms": [
+          "Problem Statement",
+          "Business Case",
+          "Scope Definition"
+        ]
+      },
+      "technical": {
+        "format": "Text with templates",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#problem-definition",
+        "#requirements",
+        "#ideation"
+      ]
+    },
+    {
+      "guide_name": "Guides on DevOps Platform",
+      "phase": "Pre-Registration",
+      "type": "Guide",
+      "purpose": "How to use DevOps platform, raise User Stories and Service Requests",
+      "url": "xyzagency.gov.sg/guidesondevopsplatform",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Developers",
+          "Product Owners",
+          "Project Managers"
+        ],
+        "prerequisites": [
+          "Digital Product Registration Guide"
+        ],
+        "related_guides": [
+          "Creating Feature in DevOps Platform",
+          "User Story Template"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Setting up new project in DevOps",
+          "Managing user stories",
+          "Handling service requests"
+        ],
+        "common_questions": [
+          "How do I create a new project?",
+          "How do I raise a user story?",
+          "What is the service request process?"
+        ],
+        "key_terms": [
+          "DevOps",
+          "User Story",
+          "Service Request",
+          "Project Setup"
+        ]
+      },
+      "technical": {
+        "format": "Interactive guide with screenshots",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#devops",
+        "#user-stories",
+        "#technical"
+      ]
+    },
+    {
+      "guide_name": "Analytics Workspace User Guide",
+      "phase": "Pre-Registration",
+      "type": "Guide",
+      "purpose": "How to assess if your product requires analytics, how to retrieve website analytics data",
+      "url": "xyzagency.gov.sg/analyticsworkspaceuserguide",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Product Owners",
+          "Analytics Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Guide on Defining Metrics for Digital Products"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Setting up product analytics",
+          "Retrieving usage data",
+          "Creating analytics dashboards"
+        ],
+        "common_questions": [
+          "Do I need analytics for my product?",
+          "How do I access analytics data?",
+          "What metrics should I track?"
+        ],
+        "key_terms": [
+          "Analytics",
+          "Metrics",
+          "Data Collection",
+          "Dashboard"
+        ]
+      },
+      "technical": {
+        "format": "Text with interactive examples",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Analytics Platform"
+        ]
+      },
+      "tags": [
+        "#analytics",
+        "#data",
+        "#metrics"
+      ]
+    },
+    {
+      "guide_name": "Governance Guidelines",
+      "phase": "Pre-Registration",
+      "type": "Guidelines",
+      "purpose": "Ensure that your product aligns with current guidelines and know how to raise the necessary approvals for any deviations required",
+      "url": "xyzagency.gov.sg/governanceguidelines",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers",
+          "Compliance Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Digital Product Registration Guide",
+          "Resource Approval Process"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Ensuring compliance with guidelines",
+          "Requesting deviations",
+          "Understanding governance requirements"
+        ],
+        "common_questions": [
+          "What guidelines apply to my project?",
+          "How do I request a deviation?",
+          "What approvals do I need?"
+        ],
+        "key_terms": [
+          "Governance",
+          "Compliance",
+          "Deviation Request",
+          "Approval Process"
+        ]
+      },
+      "technical": {
+        "format": "PDF document with flowcharts",
+        "last_updated": "2025-08-12",
+        "version": "4.0",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#governance",
+        "#compliance",
+        "#standards"
+      ]
+    },
+    {
+      "guide_name": "Digital Product Register",
+      "phase": "Registration",
+      "type": "Form",
+      "purpose": "For PO who wants to register off-cycle products",
+      "url": "xyzagency.gov.sg/digitalproductregister",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "Digital Product Registration Guide"
+        ],
+        "related_guides": [
+          "How to define problem for registration"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Registering off-cycle products",
+          "Product documentation",
+          "Project tracking"
+        ],
+        "common_questions": [
+          "How do I register an off-cycle product?",
+          "What information do I need to provide?",
+          "When should I use this form?"
+        ],
+        "key_terms": [
+          "Off-cycle Registration",
+          "Product Documentation",
+          "Registration Form"
+        ]
+      },
+      "technical": {
+        "format": "Online form",
+        "last_updated": "2025-08-12",
+        "version": "1.0",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#registration",
+        "#forms",
+        "#product-owner"
+      ]
+    },
+    {
+      "guide_name": "Programme Management Office Guides",
+      "phase": "Registration, Prioritisation",
+      "type": "Guide",
+      "purpose": "How to raise change request, service request, understanding prioritisation framework",
+      "url": "xyzagency.gov.sg/programmemanagementofficeguides",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers",
+          "PMO Teams"
+        ],
+        "prerequisites": [
+          "Digital Product Registration Guide"
+        ],
+        "related_guides": [
+          "Resource Approval Process",
+          "Digital Product Register"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Raising change requests",
+          "Managing service requests",
+          "Project prioritization"
+        ],
+        "common_questions": [
+          "How do I raise a change request?",
+          "How does the prioritisation framework work?",
+          "What is the service request process?"
+        ],
+        "key_terms": [
+          "Prioritisation Framework",
+          "Change Request",
+          "Service Request",
+          "Prioritization"
+        ]
+      },
+      "technical": {
+        "format": "PDF with interactive elements",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#pmo",
+        "#change-request",
+        "#prioritisation"
+      ]
+    },
+    {
+      "guide_name": "Creating Feature in DevOps Platform",
+      "phase": "Alignment Checkpoint",
+      "type": "Guide",
+      "purpose": "How to create feature in DevOps Platform",
+      "url": "xyzagency.gov.sg/creatingfeatureindevopsplatform",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1 hour",
+        "target_audience": [
+          "Developers",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "Guides on DevOps Platform"
+        ],
+        "related_guides": [
+          "User Story Template",
+          "User Story and Feature Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Feature creation in DevOps",
+          "Feature management",
+          "Project tracking"
+        ],
+        "common_questions": [
+          "How do I create a new feature?",
+          "What information is required for features?",
+          "How do I link features to user stories?"
+        ],
+        "key_terms": [
+          "Feature",
+          "DevOps",
+          "User Story",
+          "Requirements"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step guide with screenshots",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#devops",
+        "#features",
+        "#technical"
+      ]
+    },
+    {
+      "guide_name": "Resource Approval Process",
+      "phase": "Approval of Requirements",
+      "type": "Guide",
+      "purpose": "How to seek approval for project requiring insourcing IT effort",
+      "url": "xyzagency.gov.sg/resourceapprovalprocess",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers",
+          "Resource Managers"
+        ],
+        "prerequisites": [
+          "Programme Management Office Guides"
+        ],
+        "related_guides": [
+          "Resourcing framework"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Resource allocation",
+          "IT effort estimation",
+          "Approval workflows"
+        ],
+        "common_questions": [
+          "How do I request IT resources?",
+          "What is the approval process?",
+          "How long does approval take?"
+        ],
+        "key_terms": [
+          "Resource Allocation",
+          "IT Effort",
+          "Insourcing",
+          "Approval Workflow"
+        ]
+      },
+      "technical": {
+        "format": "PDF with workflow diagrams",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#approval",
+        "#resources",
+        "#it-projects"
+      ]
+    },
+    {
+      "guide_name": "User Story Template",
+      "phase": "Alignment Checkpoint",
+      "type": "Guide",
+      "purpose": "Use this as main reference for creating user stories",
+      "url": "xyzagency.gov.sg/userstorytemplate",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Product Owners",
+          "Business Analysts",
+          "Developers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "User Story and Feature Guide",
+          "Creating Feature in DevOps Platform"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Writing user stories",
+          "Requirements documentation",
+          "Agile development"
+        ],
+        "common_questions": [
+          "How do I write a good user story?",
+          "What format should I use?",
+          "What are acceptance criteria?"
+        ],
+        "key_terms": [
+          "User Story",
+          "Acceptance Criteria",
+          "Requirements",
+          "Agile"
+        ]
+      },
+      "technical": {
+        "format": "Template document",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#user-stories",
+        "#templates",
+        "#requirements"
+      ]
+    },
+    {
+      "guide_name": "User Story and Feature Guide",
+      "phase": "Alignment Checkpoint",
+      "type": "Guide",
+      "purpose": "Guide on managing user requirements - User Stories and Features",
+      "url": "xyzagency.gov.sg/userstoryandfeatureguide",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Product Owners",
+          "Business Analysts",
+          "Developers"
+        ],
+        "prerequisites": [
+          "User Story Template"
+        ],
+        "related_guides": [
+          "Creating Feature in DevOps Platform"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Requirements management",
+          "Feature planning",
+          "User story creation"
+        ],
+        "common_questions": [
+          "How do I manage user stories?",
+          "How do features relate to user stories?",
+          "What is the best way to organize requirements?"
+        ],
+        "key_terms": [
+          "User Story",
+          "Feature",
+          "Requirements Management",
+          "Agile Development"
+        ]
+      },
+      "technical": {
+        "format": "PDF with examples",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#user-stories",
+        "#features",
+        "#requirements"
+      ]
+    },
+    {
+      "guide_name": "Identification of Bug vs Requirement Change",
+      "phase": "Alignment Checkpoint",
+      "type": "Reference",
+      "purpose": "How to differentiate a bug from a change requirement",
+      "url": "xyzagency.gov.sg/identificationofbugvsrequirementchange",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Developers",
+          "Product Owners",
+          "QA Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Bugs Reporting and Resolution"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Bug classification",
+          "Change request assessment",
+          "Issue management"
+        ],
+        "common_questions": [
+          "Is this a bug or a change request?",
+          "How do I classify issues?",
+          "What defines a bug?"
+        ],
+        "key_terms": [
+          "Bug",
+          "Change Request",
+          "Issue Classification",
+          "Requirements"
+        ]
+      },
+      "technical": {
+        "format": "Decision tree document",
+        "last_updated": "2025-08-12",
+        "version": "1.0",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#bugs",
+        "#requirements",
+        "#maintenance"
+      ]
+    },
+    {
+      "guide_name": "Resourcing framework",
+      "phase": "Approval of Requirements",
+      "type": "Reference",
+      "purpose": "Resource approval process for projects that require more than 50 man-months of Agency XYZ's IT resource",
+      "url": "xyzagency.gov.sg/resourcingframework",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Project Managers",
+          "Resource Managers",
+          "Senior Management"
+        ],
+        "prerequisites": [
+          "Resource Approval Process"
+        ],
+        "related_guides": [
+          "Programme Management Office Guides"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Large project planning",
+          "Resource allocation",
+          "Capacity planning"
+        ],
+        "common_questions": [
+          "How do I plan resources for large projects?",
+          "What approvals do I need?",
+          "How is man-month effort calculated?"
+        ],
+        "key_terms": [
+          "Man-month",
+          "Resource Allocation",
+          "Capacity Planning",
+          "Approval Process"
+        ]
+      },
+      "technical": {
+        "format": "PDF with calculation templates",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#resources",
+        "#approval",
+        "#large-projects"
+      ]
+    },
+    {
+      "guide_name": "Design Language System",
+      "phase": "Design phase",
+      "type": "Reference",
+      "purpose": "A centralised repository of design assets that serves as a single source of truth for components across multiple digital products including website and mobile app",
+      "url": "xyzagency.gov.sg/designlanguagesystem",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-4 hours",
+        "target_audience": [
+          "Designers",
+          "Developers",
+          "Product Owners"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Content Playbook"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "UI component design",
+          "Design consistency",
+          "Asset management"
+        ],
+        "common_questions": [
+          "Where can I find design components?",
+          "How do I use the design system?",
+          "What are the design standards?"
+        ],
+        "key_terms": [
+          "Design System",
+          "Components",
+          "UI/UX",
+          "Design Standards"
+        ]
+      },
+      "technical": {
+        "format": "Interactive design system",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "Design System Platform"
+        ]
+      },
+      "tags": [
+        "#design",
+        "#components",
+        "#standards"
+      ]
+    },
+    {
+      "guide_name": "Content Playbook",
+      "phase": "Design phase",
+      "type": "Reference",
+      "purpose": "Ensure your content is aligned to Agency XYZ's writing goals and principles",
+      "url": "xyzagency.gov.sg/contentplaybook",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Content Writers",
+          "Product Owners",
+          "Communications Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Design Language System"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Content creation",
+          "Writing standards",
+          "Brand consistency"
+        ],
+        "common_questions": [
+          "What are our writing standards?",
+          "How should I structure content?",
+          "What tone should I use?"
+        ],
+        "key_terms": [
+          "Content Strategy",
+          "Writing Standards",
+          "Tone of Voice",
+          "Style Guide"
+        ]
+      },
+      "technical": {
+        "format": "Interactive playbook",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Content Management System"
+        ]
+      },
+      "tags": [
+        "#content",
+        "#writing",
+        "#standards"
+      ]
+    },
+    {
+      "guide_name": "User Testing Guide",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Best practices for user testing on XYZ Agency's website and mobile app",
+      "url": "xyzagency.gov.sg/usertestingguide",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "UX Researchers",
+          "Product Owners",
+          "Developers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Mobile app testing guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "User testing planning",
+          "Test execution",
+          "Results analysis"
+        ],
+        "common_questions": [
+          "How do I plan user testing?",
+          "What methods should I use?",
+          "How do I analyze results?"
+        ],
+        "key_terms": [
+          "User Testing",
+          "UX Research",
+          "Test Planning",
+          "Analysis"
+        ]
+      },
+      "technical": {
+        "format": "PDF with templates",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Testing Platform"
+        ]
+      },
+      "tags": [
+        "#testing",
+        "#user-testing",
+        "#qa"
+      ]
+    },
+    {
+      "guide_name": "Guide to login via Mockpass",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Guide for first time users of mockpass",
+      "url": "xyzagency.gov.sg/guidetologinviamockpass",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Developers",
+          "Testers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Mobile app testing guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Testing authentication",
+          "Mockpass setup",
+          "Development testing"
+        ],
+        "common_questions": [
+          "How do I set up Mockpass?",
+          "What credentials should I use?",
+          "How do I troubleshoot login issues?"
+        ],
+        "key_terms": [
+          "Mockpass",
+          "Authentication",
+          "Testing",
+          "Login"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step guide",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "Mockpass"
+        ]
+      },
+      "tags": [
+        "#mockpass",
+        "#testing",
+        "#authentication"
+      ]
+    },
+    {
+      "guide_name": "Mobile app testing guide",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Mobile app testing guide for pre- and post-deployment",
+      "url": "xyzagency.gov.sg/mobileapptestingguide",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "3-4 hours",
+        "target_audience": [
+          "Mobile Developers",
+          "QA Teams",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "User Testing Guide"
+        ],
+        "related_guides": [
+          "Mobile app pre-production testing onboarding guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Mobile app testing",
+          "Quality assurance",
+          "Deployment verification"
+        ],
+        "common_questions": [
+          "How do I test mobile apps?",
+          "What should I test for?",
+          "How do I prepare for deployment?"
+        ],
+        "key_terms": [
+          "Mobile Testing",
+          "QA",
+          "Deployment",
+          "Test Cases"
+        ]
+      },
+      "technical": {
+        "format": "Interactive guide with checklists",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": [
+          "Mobile Testing Platform"
+        ]
+      },
+      "tags": [
+        "#mobile",
+        "#testing",
+        "#qa"
+      ]
+    },
+    {
+      "guide_name": "Mobile app pre-production testing onboarding guide",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Guide to onboard testers onto iOS TestFlight or Google Play Store",
+      "url": "xyzagency.gov.sg/mobileapppre-productiontestingonboardingguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "1 hour",
+        "target_audience": [
+          "QA Teams",
+          "Testers",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "Mobile app testing guide"
+        ],
+        "related_guides": [
+          "Test Record guides"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Tester onboarding",
+          "TestFlight setup",
+          "Play Store testing"
+        ],
+        "common_questions": [
+          "How do I add testers?",
+          "How do testers access the app?",
+          "What permissions are needed?"
+        ],
+        "key_terms": [
+          "TestFlight",
+          "Play Store",
+          "Beta Testing",
+          "Onboarding"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step guide",
+        "last_updated": "2025-08-12",
+        "version": "1.0",
+        "status": "Active",
+        "systems": [
+          "TestFlight",
+          "Google Play Console"
+        ]
+      },
+      "tags": [
+        "#mobile",
+        "#testing",
+        "#onboarding"
+      ]
+    },
+    {
+      "guide_name": "Test Record guides",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Guide to upload test record during testing",
+      "url": "xyzagency.gov.sg/testrecordguides",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "QA Teams",
+          "Testers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Mobile app testing guide",
+          "User Testing Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Test documentation",
+          "Record keeping",
+          "Quality assurance"
+        ],
+        "common_questions": [
+          "How do I record test results?",
+          "Where do I upload test records?",
+          "What format should I use?"
+        ],
+        "key_terms": [
+          "Test Records",
+          "Documentation",
+          "QA Process",
+          "Testing"
+        ]
+      },
+      "technical": {
+        "format": "PDF with templates",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#testing",
+        "#documentation",
+        "#qa"
+      ]
+    },
+    {
+      "guide_name": "Scheduled downtime approval process",
+      "phase": "Go-live",
+      "type": "Guide",
+      "purpose": "Approval procedure if downtime is required for your product",
+      "url": "xyzagency.gov.sg/scheduleddowntimeapprovalprocess",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Product Owners",
+          "Operations Teams",
+          "Project Managers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Bugs Reporting and Resolution"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Maintenance planning",
+          "Downtime scheduling",
+          "Change management"
+        ],
+        "common_questions": [
+          "How do I schedule downtime?",
+          "What approvals do I need?",
+          "How much notice is required?"
+        ],
+        "key_terms": [
+          "Downtime",
+          "Maintenance Window",
+          "Change Management",
+          "Approval Process"
+        ]
+      },
+      "technical": {
+        "format": "PDF with workflow diagrams",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#deployment",
+        "#downtime",
+        "#approval"
+      ]
+    },
+    {
+      "guide_name": "Bugs Reporting and Resolution",
+      "phase": "Go-live",
+      "type": "Guide",
+      "purpose": "Guide to log a bug in DevOps Platform after product is in production or during testing",
+      "url": "xyzagency.gov.sg/bugsreportingandresolution",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Developers",
+          "QA Teams",
+          "Product Owners"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Identification of Bug vs Requirement Change"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Bug reporting",
+          "Issue tracking",
+          "Bug resolution"
+        ],
+        "common_questions": [
+          "How do I report a bug?",
+          "What information is needed?",
+          "How are bugs prioritized?"
+        ],
+        "key_terms": [
+          "Bug Report",
+          "Issue Tracking",
+          "Resolution Process",
+          "Priority Levels"
+        ]
+      },
+      "technical": {
+        "format": "Interactive guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "DevOps Platform"
+        ]
+      },
+      "tags": [
+        "#bugs",
+        "#reporting",
+        "#resolution"
+      ]
+    },
+    {
+      "guide_name": "Contact list of digital products",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Directory of contacts for digital products",
+      "url": "xyzagency.gov.sg/contactlistofdigitalproducts",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "15 mins",
+        "target_audience": [
+          "All Staff"
+        ],
+        "prerequisites": [],
+        "related_guides": []
+      },
+      "context": {
+        "use_cases": [
+          "Finding product contacts",
+          "Support escalation",
+          "Team coordination"
+        ],
+        "common_questions": [
+          "Who do I contact for support?",
+          "Who owns this product?",
+          "How do I escalate issues?"
+        ],
+        "key_terms": [
+          "Contact Directory",
+          "Product Ownership",
+          "Support Contacts",
+          "Escalation Path"
+        ]
+      },
+      "technical": {
+        "format": "Searchable directory",
+        "last_updated": "2025-08-12",
+        "version": "1.0",
+        "status": "Active",
+        "systems": []
+      },
+      "tags": [
+        "#contacts",
+        "#support",
+        "#directory"
+      ]
+    },
+    {
+      "guide_name": "Website Support Request Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Raise work items relating to Agency XYZ website which requires DSD assistance",
+      "url": "xyzagency.gov.sg/websitesupportrequestguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Content Owners",
+          "Product Owners"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Website Support Request Form"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Website support requests",
+          "Content updates",
+          "Technical assistance"
+        ],
+        "common_questions": [
+          "How do I request website changes?",
+          "What information do I need to provide?",
+          "How long will changes take?"
+        ],
+        "key_terms": [
+          "Support Request",
+          "Website Maintenance",
+          "Content Update",
+          "DSD Assistance"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Support Portal"
+        ]
+      },
+      "tags": [
+        "#support",
+        "#website",
+        "#maintenance"
+      ]
+    },
+    {
+      "guide_name": "Website Support Request Form",
+      "phase": "",
+      "type": "Form",
+      "purpose": "Form to submit website support requests",
+      "url": "xyzagency.gov.sg/websitesupportrequest",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "15 mins",
+        "target_audience": [
+          "Content Owners",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "Website Support Request Guide"
+        ],
+        "related_guides": []
+      },
+      "context": {
+        "use_cases": [
+          "Support request submission",
+          "Change requests",
+          "Issue reporting"
+        ],
+        "common_questions": [
+          "Where do I submit support requests?",
+          "What details are required?",
+          "How do I track my request?"
+        ],
+        "key_terms": [
+          "Support Form",
+          "Request Tracking",
+          "Change Request",
+          "Submission Process"
+        ]
+      },
+      "technical": {
+        "format": "Online form",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "Support Portal"
+        ]
+      },
+      "tags": [
+        "#support",
+        "#forms",
+        "#website"
+      ]
+    },
+    {
+      "guide_name": "Guide on Defining Metrics for Digital Products",
+      "phase": "Pre-Registration",
+      "type": "Guide",
+      "purpose": "How to define and track meaningful metrics for your digital product",
+      "url": "xyzagency.gov.sg/guideondefiningmetricsfordigitalproducts",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "3-4 hours",
+        "target_audience": [
+          "Product Owners",
+          "Analytics Teams",
+          "Project Managers"
+        ],
+        "prerequisites": [
+          "Analytics Workspace User Guide"
+        ],
+        "related_guides": [
+          "Analytics Implementation Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Metrics definition",
+          "Performance tracking",
+          "Product analytics"
+        ],
+        "common_questions": [
+          "What metrics should I track?",
+          "How do I measure success?",
+          "Which KPIs are important?"
+        ],
+        "key_terms": [
+          "KPIs",
+          "Metrics",
+          "Analytics",
+          "Performance Measurement"
+        ]
+      },
+      "technical": {
+        "format": "Interactive workbook",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Analytics Platform"
+        ]
+      },
+      "tags": [
+        "#metrics",
+        "#analytics",
+        "#performance"
+      ]
+    },
+    {
+      "guide_name": "Analytics Implementation Guide",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Technical guide for implementing analytics tracking in digital products",
+      "url": "xyzagency.gov.sg/guideondefiningmetricsfordigitalproducts",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "4-5 hours",
+        "target_audience": [
+          "Developers",
+          "Analytics Teams"
+        ],
+        "prerequisites": [
+          "Guide on Defining Metrics for Digital Products"
+        ],
+        "related_guides": [
+          "Analytics Workspace User Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Analytics setup",
+          "Tracking implementation",
+          "Data collection"
+        ],
+        "common_questions": [
+          "How do I implement tracking?",
+          "What tools should I use?",
+          "How do I validate tracking?"
+        ],
+        "key_terms": [
+          "Analytics Implementation",
+          "Tracking Code",
+          "Data Collection",
+          "Validation"
+        ]
+      },
+      "technical": {
+        "format": "Technical documentation",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "Analytics Platform"
+        ]
+      },
+      "tags": [
+        "#analytics",
+        "#implementation",
+        "#technical"
+      ]
+    },
+    {
+      "guide_name": "Security Assessment Process",
+      "phase": "Development phase",
+      "type": "Guide",
+      "purpose": "Guide for conducting security assessments on digital products",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "5-6 hours",
+        "target_audience": [
+          "Security Teams",
+          "Developers",
+          "Product Owners"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Security Requirements Checklist"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Security assessment",
+          "Risk evaluation",
+          "Compliance checking"
+        ],
+        "common_questions": [
+          "How do I conduct a security assessment?",
+          "What are the security requirements?",
+          "How often should we assess?"
+        ],
+        "key_terms": [
+          "Security Assessment",
+          "Risk Analysis",
+          "Compliance",
+          "Vulnerability Testing"
+        ]
+      },
+      "technical": {
+        "format": "PDF with assessment templates",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": [
+          "Security Assessment Platform"
+        ]
+      },
+      "tags": [
+        "#security",
+        "#assessment",
+        "#compliance"
+      ]
+    },
+    {
+      "guide_name": "Security Requirements Checklist",
+      "phase": "Development phase",
+      "type": "Checklist",
+      "purpose": "Comprehensive checklist of security requirements for digital products",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Developers",
+          "Security Teams",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "Security Assessment Process"
+        ],
+        "related_guides": []
+      },
+      "context": {
+        "use_cases": [
+          "Security compliance",
+          "Requirements verification",
+          "Security planning"
+        ],
+        "common_questions": [
+          "What security requirements apply?",
+          "How do I verify compliance?",
+          "What documentation is needed?"
+        ],
+        "key_terms": [
+          "Security Requirements",
+          "Compliance Checklist",
+          "Security Standards",
+          "Documentation"
+        ]
+      },
+      "technical": {
+        "format": "Interactive checklist",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Security Assessment Platform"
+        ]
+      },
+      "tags": [
+        "#security",
+        "#requirements",
+        "#checklist"
+      ]
+    },
+    {
+      "guide_name": "Form Authoring Process",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "SOP for users on Forms authoring",
+      "url": "xyzagency.gov.sg/formauthoringprocess",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "1-2 hours",
+        "target_audience": [
+          "Content Authors",
+          "Form Administrators"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Form Authoring Guide",
+          "FormBuilder Creation Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Form creation process",
+          "Form workflow management",
+          "Standard operating procedures"
+        ],
+        "common_questions": [
+          "What is the process for creating forms?",
+          "Who needs to approve forms?",
+          "What are the form authoring standards?"
+        ],
+        "key_terms": [
+          "Form Authoring",
+          "SOP",
+          "Workflow",
+          "Approval Process"
+        ]
+      },
+      "technical": {
+        "format": "PDF Document",
+        "last_updated": "2025-08-12",
+        "version": "1.0",
+        "status": "Active",
+        "systems": [
+          "Form Management System"
+        ]
+      },
+      "tags": [
+        "#forms",
+        "#process",
+        "#sop"
+      ]
+    },
+    {
+      "guide_name": "Form Authoring Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Guide for users on Forms authoring",
+      "url": "xyzagency.gov.sg/formauthoringguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Content Authors",
+          "Form Administrators"
+        ],
+        "prerequisites": [
+          "Form Authoring Process"
+        ],
+        "related_guides": [
+          "FormBuilder Creation Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Form design",
+          "Form creation",
+          "Best practices"
+        ],
+        "common_questions": [
+          "How do I create an effective form?",
+          "What are the best practices?",
+          "How do I structure my form?"
+        ],
+        "key_terms": [
+          "Form Design",
+          "User Experience",
+          "Form Elements",
+          "Validation"
+        ]
+      },
+      "technical": {
+        "format": "HTML Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.1",
+        "status": "Active",
+        "systems": [
+          "Form Management System"
+        ]
+      },
+      "tags": [
+        "#forms",
+        "#guide",
+        "#authoring"
+      ]
+    },
+    {
+      "guide_name": "FormBuilder Creation Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Guide for POs on how to use FormBuilder to develop your own forms",
+      "url": "xyzagency.gov.sg/formbuildercreationguide",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "4-5 hours",
+        "target_audience": [
+          "Product Owners",
+          "Form Developers"
+        ],
+        "prerequisites": [
+          "Form Authoring Guide"
+        ],
+        "related_guides": [
+          "FormBuilder API Guide",
+          "FormBuilder Feature List"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Form development",
+          "FormBuilder implementation",
+          "Custom form creation"
+        ],
+        "common_questions": [
+          "How do I create forms in FormBuilder?",
+          "What features are available?",
+          "How do I test my forms?"
+        ],
+        "key_terms": [
+          "FormBuilder",
+          "Form Development",
+          "Form Templates",
+          "Form Components"
+        ]
+      },
+      "technical": {
+        "format": "Interactive Guide",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "FormBuilder Platform"
+        ]
+      },
+      "tags": [
+        "#formbuilder",
+        "#development",
+        "#forms"
+      ]
+    },
+    {
+      "guide_name": "FormBuilder API Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Guide for ITPMs on how to configure and use APIs in FormBuilder",
+      "url": "xyzagency.gov.sg/formbuilderapiguide",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "6-8 hours",
+        "target_audience": [
+          "IT Project Managers",
+          "Developers"
+        ],
+        "prerequisites": [
+          "FormBuilder Creation Guide"
+        ],
+        "related_guides": [
+          "FormBuilder Feature List"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "API integration",
+          "Form data management",
+          "System integration"
+        ],
+        "common_questions": [
+          "How do I integrate APIs?",
+          "What endpoints are available?",
+          "How do I handle authentication?"
+        ],
+        "key_terms": [
+          "API",
+          "Endpoints",
+          "Integration",
+          "Authentication"
+        ]
+      },
+      "technical": {
+        "format": "Technical Documentation",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": [
+          "FormBuilder Platform",
+          "API Gateway"
+        ]
+      },
+      "tags": [
+        "#api",
+        "#technical",
+        "#integration"
+      ]
+    },
+    {
+      "guide_name": "FormBuilder Feature List",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Checklist for POs to determine if FormBuilder is a suitable tool",
+      "url": "xyzagency.gov.sg/formbuilderfeaturelist",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "1 hour",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "FormBuilder Creation Guide",
+          "FormBuilder checklist"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Tool evaluation",
+          "Feature comparison",
+          "Requirements matching"
+        ],
+        "common_questions": [
+          "What features does FormBuilder offer?",
+          "Is FormBuilder suitable for my needs?",
+          "What are the limitations?"
+        ],
+        "key_terms": [
+          "Features",
+          "Capabilities",
+          "Requirements",
+          "Limitations"
+        ]
+      },
+      "technical": {
+        "format": "Checklist Document",
+        "last_updated": "2025-08-12",
+        "version": "4.0",
+        "status": "Active",
+        "systems": [
+          "FormBuilder Platform"
+        ]
+      },
+      "tags": [
+        "#features",
+        "#requirements",
+        "#evaluation"
+      ]
+    },
+    {
+      "guide_name": "FormBuilder checklist",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Checklist for POs to aid them in end-to-end process of building FormBuilder",
+      "url": "xyzagency.gov.sg/formbuilderchecklist",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Product Owners",
+          "Form Developers"
+        ],
+        "prerequisites": [
+          "FormBuilder Feature List"
+        ],
+        "related_guides": [
+          "FormBuilder Creation Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Project planning",
+          "Implementation verification",
+          "Quality assurance"
+        ],
+        "common_questions": [
+          "What steps do I need to follow?",
+          "Have I completed all requirements?",
+          "What should I verify before launch?"
+        ],
+        "key_terms": [
+          "Checklist",
+          "Implementation Steps",
+          "Quality Control",
+          "Verification"
+        ]
+      },
+      "technical": {
+        "format": "Interactive Checklist",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "FormBuilder Platform"
+        ]
+      },
+      "tags": [
+        "#checklist",
+        "#implementation",
+        "#quality"
+      ]
+    },
+    {
+      "guide_name": "Added Security for Forms",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Process for forms looking to implement added security",
+      "url": "xyzagency.gov.sg/addedsecurityforforms",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "4-5 hours",
+        "target_audience": [
+          "Security Teams",
+          "Form Developers",
+          "Product Owners"
+        ],
+        "prerequisites": [
+          "FormBuilder Creation Guide"
+        ],
+        "related_guides": [
+          "Website Data Retention Guidelines"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Security enhancement",
+          "Data protection",
+          "Compliance implementation"
+        ],
+        "common_questions": [
+          "How do I secure sensitive forms?",
+          "What security features are available?",
+          "How do I implement encryption?"
+        ],
+        "key_terms": [
+          "Form Security",
+          "Encryption",
+          "Data Protection",
+          "Access Control"
+        ]
+      },
+      "technical": {
+        "format": "Technical Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.1",
+        "status": "Active",
+        "systems": [
+          "FormBuilder Platform",
+          "Security Framework"
+        ]
+      },
+      "tags": [
+        "#security",
+        "#forms",
+        "#protection"
+      ]
+    },
+    {
+      "guide_name": "Online Application Admin Module Access Request Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Guide for users on applying access via Access Platform",
+      "url": "xyzagency.gov.sg/onlineapplicationadminmoduleaccessrequestguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "1 hour",
+        "target_audience": [
+          "System Administrators",
+          "Staff Users"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Review of Staff Accesses to Admin Modules"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Access management",
+          "User provisioning",
+          "Admin rights requests"
+        ],
+        "common_questions": [
+          "How do I request admin access?",
+          "What permissions do I need?",
+          "How long does approval take?"
+        ],
+        "key_terms": [
+          "Access Control",
+          "Admin Rights",
+          "User Permissions",
+          "Authorization"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step Guide",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "Access Platform",
+          "Admin Module"
+        ]
+      },
+      "tags": [
+        "#access",
+        "#admin",
+        "#permissions"
+      ]
+    },
+    {
+      "guide_name": "Error messages on digital products",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Guide for users on using the appropriate error messages",
+      "url": "xyzagency.gov.sg/errormessagesondigitalproducts",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2 hours",
+        "target_audience": [
+          "Developers",
+          "Content Writers",
+          "UX Designers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "SEO Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Error handling",
+          "User communication",
+          "UX improvement"
+        ],
+        "common_questions": [
+          "What error messages should I use?",
+          "How should errors be displayed?",
+          "What is the best practice for error handling?"
+        ],
+        "key_terms": [
+          "Error Messages",
+          "User Experience",
+          "Error Handling",
+          "Communication"
+        ]
+      },
+      "technical": {
+        "format": "Reference Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "All Digital Products"
+        ]
+      },
+      "tags": [
+        "#errors",
+        "#ux",
+        "#content"
+      ]
+    },
+    {
+      "guide_name": "Website Data Retention Guidelines",
+      "phase": "",
+      "type": "Guidelines",
+      "purpose": "Approved data retention guidelines",
+      "url": "xyzagency.gov.sg/websitedataretentionguidelines",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "3 hours",
+        "target_audience": [
+          "Data Officers",
+          "Product Owners",
+          "System Administrators"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Existing policy waivers"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Data management",
+          "Compliance adherence",
+          "Record keeping"
+        ],
+        "common_questions": [
+          "How long should we keep data?",
+          "What data needs to be retained?",
+          "How do we safely dispose of data?"
+        ],
+        "key_terms": [
+          "Data Retention",
+          "Compliance",
+          "Data Lifecycle",
+          "Records Management"
+        ]
+      },
+      "technical": {
+        "format": "Policy Document",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "Content Management System",
+          "Data Storage Systems"
+        ]
+      },
+      "tags": [
+        "#data",
+        "#retention",
+        "#compliance"
+      ]
+    },
+    {
+      "guide_name": "Review of Staff Accesses to Admin Modules",
+      "phase": "",
+      "type": "Guidelines",
+      "purpose": "Monthly review of staff accesses to admin modules",
+      "url": "xyzagency.gov.sg/reviewofstaffaccessestoadminmodules",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2 hours",
+        "target_audience": [
+          "System Administrators",
+          "Security Officers",
+          "Team Leaders"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Online Application Admin Module Access Request Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Access review",
+          "Security audit",
+          "Compliance checking"
+        ],
+        "common_questions": [
+          "How often should access be reviewed?",
+          "What should be checked during review?",
+          "How do we handle departing staff?"
+        ],
+        "key_terms": [
+          "Access Review",
+          "Security Audit",
+          "User Management",
+          "Compliance"
+        ]
+      },
+      "technical": {
+        "format": "Process Document",
+        "last_updated": "2025-08-12",
+        "version": "2.1",
+        "status": "Active",
+        "systems": [
+          "Admin Module",
+          "Access Management System"
+        ]
+      },
+      "tags": [
+        "#access",
+        "#security",
+        "#audit"
+      ]
+    },
+    {
+      "guide_name": "Existing policy waivers",
+      "phase": "",
+      "type": "Guidelines",
+      "purpose": "Existing IM8 policy waivers in place for digital services",
+      "url": "xyzagency.gov.sg/existingpolicywaivers",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "2 hours",
+        "target_audience": [
+          "Policy Officers",
+          "Product Owners",
+          "Compliance Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Website Data Retention Guidelines"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Policy compliance",
+          "Waiver management",
+          "Exception handling"
+        ],
+        "common_questions": [
+          "What waivers are currently active?",
+          "How long are waivers valid?",
+          "How do I request new waivers?"
+        ],
+        "key_terms": [
+          "Policy Waivers",
+          "Compliance",
+          "Exceptions",
+          "IM8 Policy"
+        ]
+      },
+      "technical": {
+        "format": "Reference Document",
+        "last_updated": "2025-08-12",
+        "version": "4.0",
+        "status": "Active",
+        "systems": [
+          "Policy Management System"
+        ]
+      },
+      "tags": [
+        "#policy",
+        "#waivers",
+        "#compliance"
+      ]
+    },
+    {
+      "guide_name": "Translation Process",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Translation process for EN",
+      "url": "xyzagency.gov.sg/translationprocess",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "3 hours",
+        "target_audience": [
+          "Content Writers",
+          "Translators",
+          "Content Managers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Webpage Authoring Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Content translation",
+          "Language management",
+          "Quality assurance"
+        ],
+        "common_questions": [
+          "How do I submit content for translation?",
+          "What is the translation timeline?",
+          "How is quality assured?"
+        ],
+        "key_terms": [
+          "Translation",
+          "Language Quality",
+          "Content Management",
+          "Localization"
+        ]
+      },
+      "technical": {
+        "format": "Process Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Content Management System",
+          "Translation Management System"
+        ]
+      },
+      "tags": [
+        "#translation",
+        "#content",
+        "#language"
+      ]
+    },
+    {
+      "guide_name": "How can research and ideation help shape my change request?",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Guide to leveraging research and ideation methods for improving change requests",
+      "url": "xyzagency.gov.sg/howcanresearchandideationhelpshapemychangerequest",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Product Owners",
+          "Project Managers",
+          "UX Researchers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Research/Ideation workflow"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Change request improvement",
+          "User research integration",
+          "Solution ideation"
+        ],
+        "common_questions": [
+          "How do I incorporate research into changes?",
+          "What ideation methods work best?",
+          "How do I validate my ideas?"
+        ],
+        "key_terms": [
+          "User Research",
+          "Ideation",
+          "Change Management",
+          "Design Thinking"
+        ]
+      },
+      "technical": {
+        "format": "Interactive Guide",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "Research Management Platform"
+        ]
+      },
+      "tags": [
+        "#research",
+        "#ideation",
+        "#changes"
+      ]
+    },
+    {
+      "guide_name": "Guide on Defining Metrics for Digital Products",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Framework for establishing and tracking effective digital product metrics",
+      "url": "xyzagency.gov.sg/guideondefiningmetricsfordigitalproducts",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "4-5 hours",
+        "target_audience": [
+          "Product Owners",
+          "Analytics Teams",
+          "Project Managers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "SEO Guide",
+          "Automated Website Testing Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Metrics definition",
+          "Performance tracking",
+          "Success measurement"
+        ],
+        "common_questions": [
+          "What metrics should I track?",
+          "How do I measure success?",
+          "Which KPIs are most important?"
+        ],
+        "key_terms": [
+          "KPIs",
+          "Analytics",
+          "Performance Metrics",
+          "Data Analysis"
+        ]
+      },
+      "technical": {
+        "format": "Comprehensive Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Analytics Platform"
+        ]
+      },
+      "tags": [
+        "#metrics",
+        "#analytics",
+        "#performance"
+      ]
+    },
+    {
+      "guide_name": "Research/Ideation workflow",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Structured workflow for conducting research and ideation sessions",
+      "url": "xyzagency.gov.sg/research/ideationworkflow",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "3-4 hours",
+        "target_audience": [
+          "UX Researchers",
+          "Product Owners",
+          "Design Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "How can research and ideation help shape my change request?"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Research planning",
+          "Ideation sessions",
+          "Workshop facilitation"
+        ],
+        "common_questions": [
+          "How do I structure research sessions?",
+          "What ideation techniques work best?",
+          "How do I document findings?"
+        ],
+        "key_terms": [
+          "Research Methods",
+          "Ideation Techniques",
+          "Workshop Planning",
+          "Documentation"
+        ]
+      },
+      "technical": {
+        "format": "Workflow Document",
+        "last_updated": "2025-08-12",
+        "version": "2.1",
+        "status": "Active",
+        "systems": [
+          "Research Management Platform"
+        ]
+      },
+      "tags": [
+        "#research",
+        "#workflow",
+        "#ideation"
+      ]
+    },
+    {
+      "guide_name": "Webpage Authoring Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Comprehensive guide for creating and managing webpage content",
+      "url": "xyzagency.gov.sg/webpageauthroingguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "2-3 hours",
+        "target_audience": [
+          "Content Authors",
+          "Web Administrators"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "SEO Guide",
+          "Creation of Short URL Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Content creation",
+          "Web page management",
+          "Content optimization"
+        ],
+        "common_questions": [
+          "How do I create effective web content?",
+          "What are the best practices?",
+          "How do I format content properly?"
+        ],
+        "key_terms": [
+          "Web Content",
+          "Content Management",
+          "HTML Basics",
+          "Publishing Workflow"
+        ]
+      },
+      "technical": {
+        "format": "Interactive Guide",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "Content Management System"
+        ]
+      },
+      "tags": [
+        "#content",
+        "#web",
+        "#authoring"
+      ]
+    },
+    {
+      "guide_name": "Creation of Short URL Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Instructions for creating and managing shortened URLs",
+      "url": "xyzagency.gov.sg/creationofshorturlguide",
+      "metadata": {
+        "difficulty": "Beginner",
+        "time_required": "30 mins",
+        "target_audience": [
+          "Content Managers",
+          "Communications Teams",
+          "Web Administrators"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "Webpage Authoring Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "URL shortening",
+          "Link management",
+          "Campaign tracking"
+        ],
+        "common_questions": [
+          "How do I create a short URL?",
+          "What naming conventions should I follow?",
+          "How do I track short URL usage?"
+        ],
+        "key_terms": [
+          "URL Shortening",
+          "Link Management",
+          "URL Analytics",
+          "Tracking"
+        ]
+      },
+      "technical": {
+        "format": "Step-by-step Guide",
+        "last_updated": "2025-08-12",
+        "version": "1.5",
+        "status": "Active",
+        "systems": [
+          "URL Management System"
+        ]
+      },
+      "tags": [
+        "#url",
+        "#shortening",
+        "#links"
+      ]
+    },
+    {
+      "guide_name": "Automated Website Testing Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Guide for implementing and managing automated website testing",
+      "url": "xyzagency.gov.sg/automatedwebsitetestingguide",
+      "metadata": {
+        "difficulty": "Advanced",
+        "time_required": "6-8 hours",
+        "target_audience": [
+          "Developers",
+          "QA Engineers",
+          "Test Automation Engineers"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "SEO Guide",
+          "SiteImprove Training Resource"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Test automation",
+          "Quality assurance",
+          "Regression testing"
+        ],
+        "common_questions": [
+          "How do I set up automated tests?",
+          "What should be automated?",
+          "How often should tests run?"
+        ],
+        "key_terms": [
+          "Test Automation",
+          "Regression Testing",
+          "Test Scripts",
+          "CI/CD"
+        ]
+      },
+      "technical": {
+        "format": "Technical Guide",
+        "last_updated": "2025-08-12",
+        "version": "2.0",
+        "status": "Active",
+        "systems": [
+          "Test Automation Platform",
+          "CI/CD Pipeline"
+        ]
+      },
+      "tags": [
+        "#testing",
+        "#automation",
+        "#qa"
+      ]
+    },
+    {
+      "guide_name": "SEO Guide",
+      "phase": "",
+      "type": "Guide",
+      "purpose": "Best practices and guidelines for website SEO optimization",
+      "url": "xyzagency.gov.sg/seoguide",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "4-5 hours",
+        "target_audience": [
+          "Content Managers",
+          "Web Developers",
+          "Digital Marketing Teams"
+        ],
+        "prerequisites": [
+          "Webpage Authoring Guide"
+        ],
+        "related_guides": [
+          "SiteImprove Training Resource"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "SEO optimization",
+          "Content optimization",
+          "Search ranking improvement"
+        ],
+        "common_questions": [
+          "How do I improve SEO?",
+          "What are SEO best practices?",
+          "How do I optimize meta tags?"
+        ],
+        "key_terms": [
+          "SEO",
+          "Meta Tags",
+          "Keywords",
+          "Search Rankings"
+        ]
+      },
+      "technical": {
+        "format": "Comprehensive Guide",
+        "last_updated": "2025-08-12",
+        "version": "3.0",
+        "status": "Active",
+        "systems": [
+          "Content Management System",
+          "Analytics Platform"
+        ]
+      },
+      "tags": [
+        "#seo",
+        "#optimization",
+        "#search"
+      ]
+    },
+    {
+      "guide_name": "SiteImprove Training Resource",
+      "phase": "",
+      "type": "Reference",
+      "purpose": "Training materials and resources for using SiteImprove effectively",
+      "url": "xyzagency.gov.sg/siteimprovetrainingresource",
+      "metadata": {
+        "difficulty": "Intermediate",
+        "time_required": "3-4 hours",
+        "target_audience": [
+          "Content Managers",
+          "Web Administrators",
+          "Quality Assurance Teams"
+        ],
+        "prerequisites": [],
+        "related_guides": [
+          "SEO Guide",
+          "Automated Website Testing Guide"
+        ]
+      },
+      "context": {
+        "use_cases": [
+          "Website quality assurance",
+          "Accessibility testing",
+          "Content optimization"
+        ],
+        "common_questions": [
+          "How do I use SiteImprove?",
+          "What reports are available?",
+          "How do I interpret results?"
+        ],
+        "key_terms": [
+          "SiteImprove",
+          "Quality Assurance",
+          "Accessibility",
+          "Analytics"
+        ]
+      },
+      "technical": {
+        "format": "Training Material",
+        "last_updated": "2025-08-12",
+        "version": "2.5",
+        "status": "Active",
+        "systems": [
+          "SiteImprove Platform"
+        ]
+      },
+      "tags": [
+        "#siteimprove",
+        "#training",
+        "#quality"
+      ]
+    }
+  ]
+}

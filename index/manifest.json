@@ -1,0 +1,17 @@
+{
+  "guides_sha256": "accd80257e15d9fb40ca4dc1ddafabd2dbf5dc89c87de9a4831bf13cb590c05c",
+  "docx_sha256": "c26fdea6a68601d53ce7e40c8994ce509bf5827ee6f942676d8cc152a94afa77",
+  "built_at": 1755170652,
+  "num_guides": 51,
+  "num_chunks": 8,
+  "phases": [
+    "Alignment Checkpoint",
+    "Approval of Requirements",
+    "Design phase",
+    "Development phase",
+    "Go-live",
+    "Pre-Registration",
+    "Registration",
+    "Registration, Prioritisation"
+  ]
+}
